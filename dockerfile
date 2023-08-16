@@ -8,7 +8,7 @@ RUN apt-get -y update && apt-get -y install nginx
 COPY default /etc/nginx/sites-available/default
 
 # Luego copiamos el index 
-COPY /todo-list/index.html /usr/share/nginx/html/index.html
+COPY index.html /usr/share/nginx/html/index.html
 
 # Exponemos en el puerto determinado
 EXPOSE 80
